@@ -63,7 +63,7 @@ echo -e "${RED}$banner${SCOLOR}"
 }
 dns=$3
 [[ -z "$dns" ]] && {
-    dns='187.50.250.115'
+    dns='83.169.185.33'
 }
 echo -ne "\n${RED}[${YELLOW}!${RED}] ${YELLOW}TO CONTINUE MAKE SURE YOU\nIS ONLY WITH THE ${RED}(${YELLOW}MOBILE DATA${RED})\n${YELLOW}ACTIVATED ${GREEN}ENTER ${YELLOW}TO CONTINUE.. ${SCOLOR}"; read
 $HOME/dns -udp ${dns}:53 -pubkey ${chave} ${ns} 127.0.0.1:2222 > /dev/null 2>&1 &
