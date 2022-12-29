@@ -81,9 +81,9 @@ touch infons
 echo $nameserver > infons
 set_ns () {
 sleep 1
-wget https://raw.githubusercontent.com/khaledagn/DNS-AGN/main/drop/startdns 
-wget https://raw.githubusercontent.com/khaledagn/DNS-AGN/main/drop/restartdns 
-wget https://raw.githubusercontent.com/khaledagn/DNS-AGN/main/slowdns-info
+wget https://raw.githubusercontent.com/Romba89/vd/main/drop/startdns 
+wget https://raw.githubusercontent.com/Romba89/vd/main/drop/restartdns 
+wget https://raw.githubusercontent.com/Romba89/vd/main/slowdns-info
 chmod +x startdns
 chmod +x restartdns
 sed -i "s;1234;$nameserver;g" /etc/slowdns/startdns > /dev/null 2>&1
@@ -182,8 +182,8 @@ Option3 () {
 echo -e "Downloading default key pair..."
 cd
 rm server.key server.pub
-wget https://raw.githubusercontent.com/khaledagn/DNS-AGN/main/server.key
-wget https://raw.githubusercontent.com/khaledagn/DNS-AGN/main/server.pub
+wget https://raw.githubusercontent.com/Romba89/vd/main/server.key
+wget https://raw.githubusercontent.com/Romba89/vd/main/server.pub
 sleep 1
 echo -e "Download Completed"
 sleep 1
@@ -263,8 +263,8 @@ slowdns
 opc_key2 () {
 echo -e "Downloading default key pair..."
 cd
-wget https://raw.githubusercontent.com/khaledagn/DNS-AGN/main/server.key
-wget https://raw.githubusercontent.com/khaledagn/DNS-AGN/main/server.pub
+wget https://raw.githubusercontent.com/Romba89/vd/main/server.key
+wget https://raw.githubusercontent.com/Romba89/vd/main/server.pub
 sleep 1
 echo -e "Download Completed"
 sleep 1
